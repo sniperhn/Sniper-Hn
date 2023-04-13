@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sniper Hn - Productor de música urbana</title>
+	<!-- Enlace a archivo CSS para estilos adicionales -->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Sniper Hn</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Música</a></li>
+				<li><a href="#">Fotos</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section>
+			<h2>Música</h2>
+			<!-- Código de incrustación de reproductor de Spotify -->
+			<iframe src="https://open.spotify.com/playlist/4As7aGCCKNL7dpH5cWNHP7?si=261f9495cc1c4884" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</section>
+		
+		<section>
+			<h2>Fotos</h2>
+			<!-- Formulario para subir fotos -->
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+			    <input type="file" name="fileToUpload" id="fileToUpload">
+			    <input type="submit" value="Subir imagen" name="submit">
+			</form>
+			<!-- Galería de imágenes -->
+			<div class="gallery">
+			    <a href="img1.jpg">
+			        <img src="img1_thumb.jpg" alt="Descripción de la imagen">
+			    </a>
+			    <a href="img2.jpg">
+			        <img src="img2_thumb.jpg" alt="Descripción de la imagen">
+			    </a>
+			    <a href="img3.jpg">
+			        <img src="img3_thumb.jpg" alt="Descripción de la imagen">
+			    </a>
+			    <!-- Agrega más imágenes aquí -->
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 Sniper Hn - Productor de música urbana</p>
+	</footer>
+</body>
+</html>
